@@ -543,3 +543,44 @@ const PLAYERS_DB = {
   ]
 
 };
+
+// Ampliación internacional: más referentes contemporáneos e históricas del fútbol femenino.
+const EXTRA_PLAYERS = {
+  facil: [
+    ["Aitana Bonmatí","La Cerebro","Ganó el Balón de Oro femenino dos veces consecutivas con el Barcelona y España."],
+    ["Alexia Putellas","La Reina","Fue la primera futbolista española en ganar el Balón de Oro femenino."],
+    ["Marta","La Reina del Fútbol","Brasileña récord de premios a mejor jugadora del mundo de la FIFA."],
+    ["Mia Hamm","La Leyenda Estadounidense","Ganó dos Mundiales y dos oros olímpicos con Estados Unidos."],
+    ["Megan Rapinoe","La Zurda Rosa","Figura de Estados Unidos campeona mundial en 2015 y 2019."],
+    ["Alex Morgan","La Nueve","Delantera estadounidense campeona del Mundial 2015 y olímpica."],
+    ["Ada Hegerberg","La Pionera","Fue la primera ganadora del Balón de Oro femenino."],
+    ["Sam Kerr","La Canguro","Delantera australiana famosa por sus goles y piruetas de celebración."],
+    ["Linda Caicedo","La Joyita Colombiana","Brilló muy joven con Colombia en el Mundial femenino de 2023."],
+    ["Wendie Renard","La Torre Francesa","Defensa y capitana histórica del Lyon, uno de los clubes más ganadores." ]
+  ],
+  medio: [
+    ["Christine Sinclair","La Capitana de Canadá","Una de las máximas goleadoras internacionales de la historia."],
+    ["Carli Lloyd","La Heroína de la Final","Marcó un triplete en la final del Mundial femenino 2015."],
+    ["Formiga","La Eterna","Brasileña con participaciones en siete Copas del Mundo femeninas."],
+    ["Birgit Prinz","La Reina Alemana","Ganó tres veces el premio FIFA a mejor jugadora del mundo."],
+    ["Homare Sawa","La Capitán de Japón","Lideró a Japón al título mundial femenino de 2011."],
+    ["Saki Kumagai","La Samurai","Capitana japonesa y ganadora de múltiples Champions con el Lyon."],
+    ["Asisat Oshoala","La Reina de Nigeria","Delantera africana que ganó títulos y brilló en el Barcelona."],
+    ["Debinha","La Diez de Brasil","Mediapunta brasileña reconocida por su técnica y creatividad."],
+    ["Barbra Banda","La Potencia de Zambia","Delantera zambiana célebre por sus actuaciones olímpicas."],
+    ["Lauren James","La Técnica Inglesa","Atacante inglesa conocida por su regate y talento ofensivo." ]
+  ],
+  dificil: [
+    ["Sun Wen","La Diez de China","Ganó el Balón de Oro y la Bota de Oro del Mundial femenino de 1999."],
+    ["Michelle Akers","La Pionera","Figura de Estados Unidos en los títulos mundiales de 1991 y 1999."],
+    ["Kristine Lilly","La Récord Mundial","Posee una de las mayores cantidades de partidos internacionales en el fútbol."],
+    ["Julie Foudy","La Líder","Capitana estadounidense campeona mundial y olímpica."],
+    ["Tiffeny Milbrett","La Delantera de Oro","Marcó en la final olímpica que Estados Unidos ganó en 1996."],
+    ["Pia Sundhage","La Sueca Estratégica","Fue una destacada futbolista y luego entrenadora campeona olímpica."],
+    ["Hege Riise","La Cerebro Noruega","Ganó el Mundial femenino de 1995 con Noruega."],
+    ["Sissi","La Artista Brasileña","Fue una de las grandes figuras ofensivas de Brasil en los años 90."],
+    ["Pretinha","La Delantera Brasileña","Integró generaciones históricas de Brasil junto a Marta y Formiga."],
+    ["Lily Parr","La Pionera Inglesa","Delantera histórica de Inglaterra y una de las primeras grandes figuras del fútbol femenino." ]
+  ]
+};
+Object.keys(EXTRA_PLAYERS).forEach((level) => PLAYERS_DB[level].push(...EXTRA_PLAYERS[level]));

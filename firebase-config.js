@@ -12,5 +12,7 @@ const firebaseConfig = {
   storageBucket: "impostor-futbolero-538d3.firebasestorage.app",
   messagingSenderId: "837130387778",
   appId: "1:837130387778:web:601a02ded902a001e188db",
-  measurementId: "G-8NCPSF0977"
+  measurementId: "G-8NCPSF0977",
+  // Después de configurar App Check, pega aquí la clave pública reCAPTCHA v3.
+  appCheckSiteKey: ""
 };
